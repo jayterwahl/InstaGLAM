@@ -1,57 +1,98 @@
-<div class="splash_outer">
-  <center>
-    <div class="vert_center">
+<header class="splash-header">
+  <div class="splash-header-content">
+    <i class="fa fa-camera-retro" id="logo-camera"></i>
+    <i id="logo-script">InstaGlam</i>
+  </div>
+</header>
 
-      <div class="logo_outer">
-        <div class="star_div">
-          <div class="splash_logo">
-          </div>
-        </div>
-      </div>
-
-      <h1>InstaGlam</h1>
-      <div class="login_slogan">
-        Let your glamorous life begin
-      </div>
-      <form action="<%= session_url %>" method="post">
-          <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
-          <input type="text"
-                  name="user[username]"
-                  class="login_username"
-                  placeholder='Username'
-                  value="">
-          <div class="bottom_pad"></div>
-          <input type="password"
-                   name="user[password]"
-                   placeholder='Password'
-                   value=""
-                   class="bottom_pad">
-          <div class="bottom_pad"></div>
-          <input type="submit" value="Sign In!" class="login" >
-          <div class="bottom_pad"></div>
-          <div class="bottom_pad"></div>
-          <div class="bottom_pad"></div>
-          <div class="bottom_pad"></div>
-
-
-      </form>
-          <div class="guest_pad"> </div>
-          <div class="login_text">
-
-            <div class="login_switch_div">
-              <div class="registered_text">
-                New around here?
-              </div>
-              <div class="sign_up_link">
-                <%= link_to "Sign Up!", new_user_url %>
-              </div>
-            </div>
-
-            <div class="login_render">
-              <%= render "layouts/guest" %>
-            </div>
-
-          </div>
-    </div>
-  </center>
+<div class="splash-background-container">
+  <img src="<%= asset_url("splash_bg.jpg")%> ">
 </div>
+
+<div class="splash-body">
+  <div class="splash-body-content">
+    <h1 class="splash-body-content-header"></h1>
+    <p class="splash-body-content-description">
+      Your glamorous life begins</p>
+    <form class="splash-form-guest-log-in" action="<%= session_url %>" method="post">
+      <input type="hidden" name="authenticity_token" value="<%=form_authenticity_token%>">
+      <input
+        type="hidden"
+        name="user[username]"
+        value="shutterbug">
+      </input>
+      <input
+        type="hidden"
+        name="user[password]"
+        value="password">
+      </input>
+      <input type="submit" class="hidden-submit"></input>
+      <a href="" class="submit-button" id="splash-guest-log-in-button">Take a tour</a>
+    </form>
+  </div>
+  <div class="splash-body-forms">
+    <form class="splash-form-log-in" action="<%= session_url %>" method="post">
+      <input type="hidden" name="authenticity_token" value="<%=form_authenticity_token%>">
+      <input class="splash-form-input username"
+        id="splash-form-log-in-username"
+        type="text"
+        name="user[username]"
+        placeholder="Username">
+      </input>
+      <input class="splash-form-input password"
+        id="splash-form-log-in-password"
+        type="password"
+        name="user[password]"
+        placeholder="Password">
+      </input>
+      <input type="submit" class="hidden-submit"></input>
+      <a href="" class="submit-button" id="splash-log-in-button">Log in</a>
+    </form>
+
+    <form class="splash-form-new-user" action="<%= users_url %>" method="post">
+      <input type="hidden" name="authenticity_token" value="<%=form_authenticity_token%>">
+      <h1 class="new-user-form-header">
+        <span class="new-user-form-header-bold">New to InstaGlam?</span>
+        <span class="new-user-form-header-plain">Sign up</span>
+      </h1>
+      <div class="new-user-form-divider"></div>
+      <input class="splash-form-input username"
+        id="splash-form-new-user-username"
+        type="text"
+        name="user[username]"
+        placeholder="Username">
+      </input>
+      <input class="splash-form-input display-name"
+        id="splash-form-new-user-display-name"
+        type="text"
+        name="user[display_name]"
+        placeholder="Display name">
+      </input>
+      <input class="splash-form-input password"
+        id="splash-form-new-user-password"
+        type="password"
+        name="user[password]"
+        placeholder="Password">
+      </input>
+      <input type="submit" class="hidden-submit"></input>
+      <a href="" class="submit-button" id="splash-sign-up-button">Sign up for InstaGlam</a>
+    </form>
+  </div>
+</div>
+
+<script>
+$("#splash-guest-log-in-button").on("click", function (event) {
+  event.preventDefault();
+  $(".splash-form-guest-log-in").submit();
+});
+
+$("#splash-log-in-button").on("click", function (event) {
+  event.preventDefault();
+  $(".splash-form-log-in").submit();
+});
+
+$("#splash-sign-up-button").on("click", function (event) {
+  event.preventDefault();
+  $(".splash-form-new-user").submit();
+});
+</script>

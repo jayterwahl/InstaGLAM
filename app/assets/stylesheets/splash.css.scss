@@ -1,0 +1,207 @@
+.splash-header {
+  position: fixed;
+  background-color: #fff;
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+  box-sizing: border-box;
+  z-index: 1;
+  box-shadow: 0 0 10px 1px #ddd;
+}
+
+.splash-header-content {
+  position: relative;
+  width: 800px;
+  margin: auto;
+  color: #306088;
+}
+
+#logo-camera {
+  font-size: 32px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#logo-script {
+  font-family: "Pacifico";
+  font-size: 24px;
+
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  color: #497293;
+}
+
+.splash-background-container {
+  position: fixed;
+  width: 200%;
+  height: 200%;
+  left: -50%;
+  background: #000;
+  z-index: 0;
+}
+
+.splash-background-container > img {
+  display: block;
+  margin: auto;
+  min-width: 50%;
+  min-height: 50%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.splash-body {
+  position: fixed;
+  bottom: 0;
+  top: 50px;
+  width: 800px;
+  left: 50%;
+  transform: translateX(-50%);
+  box-sizing: border-box;
+}
+
+.splash-body-content {
+  position: relative;
+  display: inline-block;
+  width: 400px;
+  vertical-align: top;
+  margin-top: 80px;
+  margin-right: 80px;
+  box-sizing: border-box;
+}
+
+.splash-body-content-header {
+  font-size: 36px;
+  color: #fff;
+  margin-bottom: 30px;
+  text-shadow: 0 0 6px #000;
+}
+
+.splash-body-content-description {
+  font-family: "Raleway";
+  font-weight: 300;
+  font-size: 20px;
+  color: #fff;
+  line-height: 150%;
+  text-shadow: 0 0 4px #000;
+}
+
+.splash-body-forms {
+  display: inline-block;
+  width: 300px;
+  vertical-align: top;
+  margin-top: 80px;
+  box-sizing: border-box;
+}
+
+.splash-body-forms > form {
+  position: relative;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #fff;
+}
+
+.splash-form-log-in {
+  margin-bottom: 20px;
+}
+
+.splash-form-input {
+  width: 100%;
+}
+
+#splash-guest-log-in-button {
+  font-size: 24px;
+  width: auto;
+  display: block;
+  position: absolute;
+  padding: 20px 30px;
+  background-image: -webkit-linear-gradient(top,#fafafa,#eee);
+  color: #333;
+  border: 1px solid #ddd;
+  margin-top: 40px;
+}
+
+#splash-guest-log-in-button:hover {
+  background-image: -webkit-linear-gradient(top,#fafafa,#ddd);
+}
+
+#splash-guest-log-in-button:active {
+  background-color: #ddd;
+  background-image: none;
+  box-shadow: 0 0 10px 1px #aaa inset;
+}
+
+
+#splash-form-log-in-username {
+  margin-bottom: 10px;
+}
+
+#splash-form-log-in-password {
+  width: calc(100% - 74px);
+}
+
+#splash-log-in-button {
+  position: absolute;
+  right: 10px;
+  margin: 0;
+  bottom: 10px;
+  background-image: -webkit-linear-gradient(top,#6892b4,#306088);
+  color: #fff;
+  border: 1px solid #234562;
+}
+
+#splash-log-in-button:hover {
+  background-image: -webkit-linear-gradient(top,#6892b4,#264c6b);
+}
+
+#splash-log-in-button:active {
+  background-color: #264c6b;
+  background-image: none;
+  box-shadow: 0 0 10px 1px #234562 inset;
+}
+
+#splash-sign-up-button {
+  transform: translateX(140px);
+  margin: 0;
+  margin-top: 10px;
+  width: 160px;
+}
+
+#splash-sign-up-button:hover {
+  background-image: -webkit-linear-gradient(top,#6bb38a,#31704c);
+}
+
+#splash-sign-up-button:active {
+  background-color: #31704c;
+  background-image: none;
+  box-shadow: 0 0 10px 1px #214d34 inset;
+}
+
+.hidden-submit {
+  display: none;
+}
+
+.new-user-form-header {
+  padding-top: 5px;
+  padding-bottom: 15px;
+}
+
+
+
+.splash-form-new-user > .splash-form-input {
+  margin-top: 10px;
+}
+
+.splash-form-new-user > .submit-button:focus {
+  color: #fff;
+  background-color: #3d8b5f;
+}
+
+.new-user-form-header-plain {
+  font-family: "Raleway";
+  font-weight: 300;
+}

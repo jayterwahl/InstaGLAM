@@ -2,7 +2,7 @@
  *= require_tree .
  *= require_self
  */
- html, body, header, nav, h1, a,
+ /*html, body, header, nav, h1, a,
  ul, li, strong, main, button, i,
  section, img, div, h5, h4, button, p, form,
  fieldset, label, input, textarea,
@@ -163,6 +163,7 @@
    cursor: pointer;
  }
 
+/*the guest button*/
  .guest {
    font-size: 16px;
    width: 47px;
@@ -841,12 +842,6 @@
   padding: 0px 0px 21px 0px;
 }
 
-.vert_center {
-  position: absolute;
-  top: 50%;
-  width: 100%;
-  transform: translateY(-50%);
-}
 
 .splash_logo {
   font-size: 100px;
@@ -854,9 +849,9 @@
   font-weight: bold;
   color: #ffdf29;
   width: 110px;
-  height: 110px;;
+  height: 50px;
   top: 100%;
-  position: absolute;
+  position: relative;
   -webkit-transform: translateY(-65%);
   -ms-transform: translateY(-65%);
   -moz-transform: translateY(-51%);
@@ -883,4 +878,5 @@
 .splash_outer {
   height: 100%;
   width: 100%;
-}
+  background-image: "https://images.unsplash.com/photo-1414839246800-1ed50eb905e7?crop=entropy&fit=crop&fm=jpg&h=925&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1300";
+}*/
