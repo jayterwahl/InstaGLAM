@@ -24,7 +24,7 @@ u3 = User.create!(
   password: "42131607"
 )
 u4 = User.create!(
-  username: "guest",
+  username: "gary",
   password: "password"
 )
 u5 = User.create!(
@@ -41,6 +41,10 @@ u7 = User.create!(
 )
 u8 = User.create!(
   username: "vtg_bikes",
+  password: "password"
+)
+u9 = User.create!(
+  username: "guest",
   password: "password"
 )
 
