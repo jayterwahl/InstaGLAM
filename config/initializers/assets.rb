@@ -12,3 +12,5 @@ Rails.application.config.assets.version = '1.0'
 
 Rails.application.config.assets.precompile += %w( favicon.ico )
 Rails.application.config.assets.precompile += %w( splash_bg.jpg )
+Rails.application.config.assets.precompile += %w( splash_bg2.jpg )
+Rails.application.config.assets.precompile += %w( splash_bg1.jpg )

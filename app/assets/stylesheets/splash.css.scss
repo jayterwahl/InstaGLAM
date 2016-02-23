@@ -32,6 +32,13 @@
   color: #497293;
 }
 
+#bg-pic {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 .splash-background-container {
   position: fixed;
   width: 200%;
@@ -86,6 +93,7 @@
   color: #fff;
   line-height: 150%;
   text-shadow: 0 0 4px #000;
+
 }
 
 .splash-body-forms {
@@ -202,6 +210,10 @@
 }
 
 .new-user-form-header-plain {
+  font-family: "Raleway";
+  font-weight: 300;
+}
+.new-user-form-header-bold {
   font-family: "Raleway";
   font-weight: 300;
 }

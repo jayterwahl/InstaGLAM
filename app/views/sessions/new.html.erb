@@ -6,14 +6,14 @@
 </header>
 
 <div class="splash-background-container">
-  <img src="<%= asset_url("splash_bg.jpg")%> ">
+  <img id="bg_pic" src="<%= asset_url("splash_bg1.jpg")%> ">
 </div>
 
 <div class="splash-body">
   <div class="splash-body-content">
     <h1 class="splash-body-content-header"></h1>
     <p class="splash-body-content-description">
-      Your glamorous life begins</p>
+      Let the peasants gaze upon you, and despair.</p>
     <form class="splash-form-guest-log-in" action="<%= session_url %>" method="post">
       <input type="hidden" name="authenticity_token" value="<%=form_authenticity_token%>">
       <input
