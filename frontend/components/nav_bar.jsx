@@ -25,7 +25,7 @@ var NavBar = React.createClass({
           <div className="header_logo">
             <h2 onClick={this.handleClick}
                 className="cursor">
-                  Picstagram
+                  InstaGLAM
             </h2>
           </div>
           <UploadButton className="header_item cursor"></UploadButton>
