@@ -1,7 +1,7 @@
 # instaglam
 
 [Heroku link][heroku]
-[heroku]: http://www.herokuapp.com
+[heroku]:https://vast-hamlet-10566.herokuapp.com/
 
 ## Minimum Viable Product
 
@@ -10,7 +10,7 @@ and React.js. instaglam allows users to:
 
 - [ ] Create an account
 - [ ] Log in / Log out
-- [ ] View pictures. 
+- [ ] View pictures.
 - [ ] Upload pictures.
 - [ ] Apply filters to their pictures.
 - [ ] Follow others, and view followed pictures in a feed.
@@ -97,4 +97,3 @@ which has its own `Index` view.
 - [ ] Get feedback on my UI from others
 - [ ] Refactor HTML classes & CSS rules
 - [ ] Add modals, transitions, and other styling flourishes.
-
