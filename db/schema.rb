@@ -11,7 +11,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151216210123) do
+ActiveRecord::Schema.define(version: 20151224173120) do
+
+  create_table "comments", force: :cascade do |t|
+    t.integer  "user_id",               null: false
+    t.integer  "pic_id",                null: false
+    t.string   "body",       limit: 50, null: false
+    t.datetime "created_at",            null: false
+    t.datetime "updated_at",            null: false
+  end
+
+  add_index "comments", ["pic_id"], name: "index_comments_on_pic_id"
 
   create_table "follows", force: :cascade do |t|
     t.integer  "follower_id", null: false
@@ -22,6 +32,16 @@ ActiveRecord::Schema.define(version: 20151216210123) do
 
   add_index "follows", ["followed_id"], name: "index_follows_on_followed_id"
   add_index "follows", ["follower_id", "followed_id"], name: "index_follows_on_follower_id_and_followed_id", unique: true
+
+  create_table "likes", force: :cascade do |t|
+    t.integer  "pic_id",     null: false
+    t.integer  "liker_id",   null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "likes", ["liker_id", "pic_id"], name: "index_likes_on_liker_id_and_pic_id", unique: true
+  add_index "likes", ["liker_id"], name: "index_likes_on_liker_id"
 
   create_table "pics", force: :cascade do |t|
     t.integer  "user_id",    null: false
