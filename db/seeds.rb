@@ -12,7 +12,7 @@ Like.delete_all
 Comment.delete_all
 
 u1 = User.create!(
-  username: "coolguy",
+  username: "alfric",
   password: "password"
 )
 u2 = User.create!(

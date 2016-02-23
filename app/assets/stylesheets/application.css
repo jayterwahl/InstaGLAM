@@ -4,168 +4,172 @@
  */
 
 
- /*html, body, header, nav, h1, a,
- ul, li, strong, main, button, i,
- section, img, div, h5, h4, button, p, form,
- fieldset, label, input, textarea,
- span, article, footer, time, small {
-   margin: 0;
-   padding: 0;
-   border: 0;
-   outline: 0;
-   font-size: 0px;
-   font: inherit;
-   color: inherit;
-   font-weight: normal;
-   text-align: inherit;
-   text-decoration: inherit;
-   box-sizing: inherit;
-   background: transparent;
-   font-family: montserrat;
- }
+   /*html, body, header, nav, h1, a,
+   ul, li, strong, main, button, i,
+   section, img, div, h5, h4, button, p, form,
+   fieldset, label, input, textarea,
+   span, article, footer, time, small {
+     margin: 0;
+     padding: 0;
+     border: 0;
+     outline: 0;
+     font-size: 0px;
+     font: inherit;
+     color: inherit;
+     font-weight: normal;
+     text-align: inherit;
+     text-decoration: inherit;
+     box-sizing: inherit;
+     background: transparent;
+     font-family: montserrat;
+   }
 
- body {
- }
 
- h1 {
-   color: #2a8cef;
-   font-family: courgette;
-   padding: 18px;
-   font-weight: bold;
-   font-size: 75px;
-   text-shadow: 1px 1px #9e9e9e;
- }
+   h1 {
+     color: #2a8cef;
+     font-family: courgette;
+     padding: 18px;
+     font-weight: bold;
+     font-size: 75px;
+     text-shadow: 1px 1px #9e9e9e;
+   }
 
- h2 {
-   color: #2a8cef;
-   font-family: courgette;
-   font-weight: normal;
-   font-size: 25px;
-   text-shadow: .5px .5px #9e9e9e;
-   margin: 17px 0px 0px 0px;
-   padding: 0px 0px 0px 0px;
-   width: 120px;
-   -moz-transition: all .1s ease-in;
-   -o-transition: all .1s ease-in;
-   -webkit-transition: all .1s ease-in;
-   transition: all .1s ease-in;
- }
+   h2 {
+     color: #2a8cef;
+     font-family: courgette;
+     font-weight: normal;
+     font-size: 25px;
+     text-shadow: .5px .5px #9e9e9e;
+     margin: 17px 0px 0px 0px;
+     padding: 0px 0px 0px 0px;
+     width: 120px;
+     -moz-transition: all .1s ease-in;
+     -o-transition: all .1s ease-in;
+     -webkit-transition: all .1s ease-in;
+     transition: all .1s ease-in;
+   }
 
- h2:hover {
-   color: #2ACDEF;
-   text-shadow: .5px .5px #9e9e9e;
- }
+   h2:hover {
+     color: #2ACDEF;
+     text-shadow: .5px .5px #9e9e9e;
+   }
 
- h3 {
-   font-size: 15px;
-   padding: 0px 0px 5px 0px;
- }
+   h3 {
+     font-size: 15px;
+     padding: 0px 0px 5px 0px;
+   }
 
- h4 {
-   padding: 10px;
- }
+   h4 {
+     padding: 10px;
+   }
 
- h5 {
-   font-size: 16px;
-   font-family: montserrat;
- }
+   h5 {
+     font-size: 16px;
+     font-family: montserrat;
+   }
 
- ul {
-   list-style: none;
- }
+   ul {
+     list-style: none;
+   }
 
- html {
-   height: 100%;
-   width: 100%;
- }
+   html {
+     height: 100%;
+     width: 100%;
+   }
 
- body {
-   height: 100%;
-   width: 100%
- }
+   body {
+     height: 100%;
+     width: 100%
+   }
 
- img {
-   display: block;
-   width: 100%;
-   height: auto;
- }
+   img {
+     display: block;
+     width: 100%;
+     height: auto;
+   }
 
- input[type="text"],
- input[type="email"],
- input[type="password"],
- textarea,
- button {
-   -webkit-appearance: none;
-   -moz-appearance: none;
- }
+   input[type="text"],
+   input[type="email"],
+   input[type="password"],
+   textarea,
+   button {
+     -webkit-appearance: none;
+     -moz-appearance: none;
+   }
 
- input[type="submit"],
- textarea {
-   -webkit-appearance: none;
-   -moz-appearance: none;
-   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 );
- 			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(198,224,251,1)), color-stop(60%, rgba(255,255,255,0)));
- 			background: -webkit-linear-gradient(top, rgba(198,224,251,1) 0%, rgba(255,255,255,0) 60%);
- 			background:    -moz-linear-gradient(top, rgba(198,224,251,1) 0%, rgba(255,255,255,0) 60%);
- 			background:     -ms-linear-gradient(top, rgba(198,224,251,1) 0%, rgba(255,255,255,0) 60%);
- 			background:      -o-linear-gradient(top, rgba(198,224,251,1) 0%, rgba(255,255,255,0) 60%);
- 			background:         linear-gradient(top, rgba(198,224,251,1) 0%, rgba(255,255,255,0) 60%);
-}
+   input[type="submit"],
+   textarea {
+     -webkit-appearance: none;
+     -moz-appearance: none;
+     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 );
+   			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(198,224,251,1)), color-stop(60%, rgba(255,255,255,0)));
+   			background: -webkit-linear-gradient(top, rgba(198,224,251,1) 0%, rgba(255,255,255,0) 60%);
+   			background:    -moz-linear-gradient(top, rgba(198,224,251,1) 0%, rgba(255,255,255,0) 60%);
+   			background:     -ms-linear-gradient(top, rgba(198,224,251,1) 0%, rgba(255,255,255,0) 60%);
+   			background:      -o-linear-gradient(top, rgba(198,224,251,1) 0%, rgba(255,255,255,0) 60%);
+   			background:         linear-gradient(top, rgba(198,224,251,1) 0%, rgba(255,255,255,0) 60%);
+  }
 
- input[type="comment"],
- textarea {
-   border-radius: 5px;
-   text-align: left;
-   width: 100%;
-   margin: 2px;
-   font-size: 15px;
-   padding: 0px 0px 0px 9px;
-   margin: 4px 0px 10px 0px;
- }
+   input[type="comment"],
+   textarea {
+     border-radius: 5px;
+     text-align: left;
+     width: 100%;
+     margin: 2px;
+     font-size: 15px;
+     padding: 0px 0px 0px 9px;
+     margin: 4px 0px 10px 0px;
+   }
 
- input[type="password"],
- textarea {
-   margin: 2px;
-   border-radius: 5px;
-   background-color: #EBEDED;
-   text-align: left;
-   width: 165px;
-   font-size: 15px;
-   padding: 1px 0px 1px 7px;
-   -webkit-appearance: none;
-   -moz-appearance: none;
- }
+   input[type="password"],
+   textarea {
+     margin: 2px;
+     border-radius: 5px;
+     background-color: #EBEDED;
+     text-align: left;
+     width: 165px;
+     font-size: 15px;
+     padding: 1px 0px 1px 7px;
+     -webkit-appearance: none;
+     -moz-appearance: none;
+   }
 
- button,
- input[type="submit"] {
-   font-size: 16px;
-   margin: 2px;
-   text-align: center;
-   cursor: pointer;
-   width: 168px;
-   padding: 1px 0px 1px 5px;
-   background-color: #2a8cef;
-   -webkit-appearance: none;
-   -moz-appearance: none;
- }
+   button,
+   input[type="submit"] {
+     font-size: 16px;
+     margin: 2px;
+     text-align: center;
+     cursor: pointer;
+     width: 168px;
+     padding: 1px 0px 1px 5px;
+     background-color: #2a8cef;
+     -webkit-appearance: none;
+     -moz-appearance: none;
+   }
 
- button,
- input[type="submit"]:hover {
-   margin: 2px;
-   text-align: center;
-   cursor: pointer;
-   width: 168px;
-   padding: 1px 0px 1px 5px;
-   background-color: #2a8cef;
-   -webkit-appearance: none;
-   -moz-appearance: none;
- }
 
- .cursor {
-   cursor: pointer;
- }
+
+   button,
+   input[type="submit"]:hover {
+     margin: 2px;
+     text-align: center;
+     cursor: pointer;
+     width: 168px;
+     padding: 1px 0px 1px 5px;
+     background-color: #2a8cef;
+     -webkit-appearance: none;
+     -moz-appearance: none;
+   }
+
+
 
 /*the guest button*/
+body {
+
+  background-image: url("http://pre09.deviantart.net/cc70/th/pre/f/2015/098/3/1/deus_ex_md__abstract_wallpaper_by_limb0ist-d8oz2r8.jpg");
+
+}
+
  .guest {
    font-size: 16px;
    width: 47px;
@@ -438,6 +442,11 @@
    padding: 30px 0px 4px 0px;
  }
 
+ /* put this in .feed if you don't find something better
+
+ background-image: url("http://pre09.deviantart.net/cc70/th/pre/f/2015/098/3/1/deus_ex_md__abstract_wallpaper_by_limb0ist-d8oz2r8.jpg");
+*/
+
  .top_pad {
    padding: 8px 0px 0px 0px;
  }
@@ -612,7 +621,8 @@
 
  .nav_bar {
    height: 65px;
-   width: 700px;
+   width: 100%;
+   color: #e5bb00;
  }
 
  .camera_icon {
