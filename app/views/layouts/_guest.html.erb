@@ -1,0 +1,17 @@
+<form type="hidden" action="<%= session_url %>" method="post">
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+  <input type="hidden"
+         name="user[username]"
+         value="Guest">
+  <input type="hidden"
+         name="user[password]"
+         value="12345678">
+  <div class="guest_div">
+    <div class="guest_text">
+      Or sign in as a
+    </div>
+    <div class="right link_to_sign_in">
+      <button value="guest!" class="guest">Guest</button>
+    </div>
+  </div>
+</form>
