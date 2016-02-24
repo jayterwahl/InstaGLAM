@@ -156,10 +156,8 @@
 #splash-log-in-button {
   position: absolute;
   right: 10px;
-  margin: 0;
-  bottom: 10px;
-  background-image: -webkit-linear-gradient(top,#6892b4,#306088);
-  color: #fff;
+  background-color: black;
+  color: gold;
   border: 1px solid #234562;
 }
 
@@ -173,21 +171,12 @@
   box-shadow: 0 0 10px 1px #234562 inset;
 }
 
-#splash-sign-up-button {
-  transform: translateX(140px);
-  margin: 0;
-  margin-top: 10px;
-  width: 160px;
-}
-
 #splash-sign-up-button:hover {
   background-image: -webkit-linear-gradient(top,#6bb38a,#31704c);
 }
-
-#splash-sign-up-button:active {
-  background-color: #31704c;
-  background-image: none;
-  box-shadow: 0 0 10px 1px #214d34 inset;
+#splash-sign-up-button {
+  background-color: black;
+  color: gold;
 }
 
 .hidden-submit {
