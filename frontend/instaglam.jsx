@@ -34,7 +34,9 @@ var routes = (
   </Route>
 );
 
-ReactDOM.render(
-  <Router>{ routes }</Router>,
-  document.getElementById("root")
-);
+if(document.getElementById("root")){
+  ReactDOM.render(
+    <Router>{ routes }</Router>,
+    document.getElementById("root")
+  );
+}
