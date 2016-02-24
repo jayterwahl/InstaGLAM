@@ -10,8 +10,11 @@ Rails.application.config.assets.version = '1.0'
 # application.js, application.css, and all non-JS/CSS in app/assets folder are already added.
 # Rails.application.config.assets.precompile += %w( search.js )
 
+
+
 Rails.application.config.assets.precompile += %w( favicon.ico )
 Rails.application.config.assets.precompile += %w( splash_bg.jpg )
 Rails.application.config.assets.precompile += %w( splash_bg2.jpg )
 Rails.application.config.assets.precompile += %w( splash_bg1.jpg )
 Rails.application.config.assets.precompile += %w( splash_bg3.jpg )
+Rails.application.config.assets.precompile << /\.(?:svg|eot|woff|ttf)\z/
