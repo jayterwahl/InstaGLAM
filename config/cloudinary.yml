@@ -1,0 +1,19 @@
+---
+development:
+  cloud_name: instaglam
+  api_key: '158322318879784'
+  api_secret: qn6CMGeBiPYS6RD5_2Le2c3sArs
+  enhance_image_tag: true
+  static_image_support: false
+production:
+  cloud_name: instaglam
+  api_key: '158322318879784'
+  api_secret: qn6CMGeBiPYS6RD5_2Le2c3sArs
+  enhance_image_tag: true
+  static_image_support: true
+test:
+  cloud_name: instaglam
+  api_key: '158322318879784'
+  api_secret: qn6CMGeBiPYS6RD5_2Le2c3sArs
+  enhance_image_tag: true
+  static_image_support: false
