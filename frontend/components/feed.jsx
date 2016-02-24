@@ -89,9 +89,6 @@ var Feed = React.createClass({
           <li className="top_pad">
             Follow more users to jump-start your feed!
           </li>
-          <li className="top_pad">
-            <i className="no_pics_icon fa fa-picture-o"></i>
-          </li>
         </ul>
       );
     } else {

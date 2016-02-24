@@ -13,7 +13,7 @@
   <div class="splash-body-content">
     <h1 class="splash-body-content-header"></h1>
     <p class="splash-body-content-description">
-      Let the peasants gaze upon you, and despair.</p>
+      Let them look upon you, and despair.</p>
     <form class="splash-form-guest-log-in" action="<%= session_url %>" method="post">
       <input type="hidden" name="authenticity_token" value="<%=form_authenticity_token%>">
       <input
@@ -75,23 +75,23 @@
 </div>
 
 <script type="text/javascript">
-$("#splash-guest-log-in-button").on("click", function (event) {
-  event.preventDefault();
-  $(".splash-form-guest-log-in").submit();
-});
 
-$("#splash-log-in-button").on("click", function (event) {
-  event.preventDefault();
-  $(".splash-form-log-in").submit();
-});
+   $(document).ready(function(){
 
-$("#splash-sign-up-button").on("click", function (event) {
-  event.preventDefault();
-  $(".splash-form-new-user").submit();
-});
+      $("#splash-guest-log-in-button").on("click", function (event) {
+        event.preventDefault();
+        $(".splash-form-guest-log-in").submit();
+      });
+
+      $("#splash-log-in-button").on("click", function (event) {
+        event.preventDefault();
+        $(".splash-form-log-in").submit();
+      });
+
+      $("#splash-sign-up-button").on("click", function (event) {
+        event.preventDefault();
+        $(".splash-form-new-user").submit();
+      });
+    });
+
 </script>
-
-
-
-
-<div class="divider-bar"> some text  </div>

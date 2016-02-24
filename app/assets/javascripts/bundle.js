@@ -32935,11 +32935,6 @@
 	          "li",
 	          { className: "top_pad" },
 	          "Follow more users to jump-start your feed!"
-	        ),
-	        React.createElement(
-	          "li",
-	          { className: "top_pad" },
-	          React.createElement("i", { className: "no_pics_icon fa fa-picture-o" })
 	        )
 	      );
 	    } else {
