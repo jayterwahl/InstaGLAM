@@ -31,6 +31,7 @@ var UploadButton = React.createClass({
       <div className="camera_button">
         <i className="cursor fa fa-camera camera_icon"
            onClick={this.upload}>
+           Upload pictures
          </i>
       </div>
     );

@@ -19917,7 +19917,6 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	var Dispatcher = __webpack_require__(162).Dispatcher;
-	
 	module.exports = new Dispatcher();
 
 /***/ },
@@ -31908,8 +31907,12 @@
 	    return React.createElement(
 	      "div",
 	      { className: "camera_button" },
-	      React.createElement("i", { className: "cursor fa fa-camera camera_icon",
-	        onClick: this.upload })
+	      React.createElement(
+	        "i",
+	        { className: "cursor fa fa-camera camera_icon",
+	          onClick: this.upload },
+	        "Upload pictures"
+	      )
 	    );
 	  }
 	

@@ -165,11 +165,14 @@
 
 /*the guest button*/
 body {
-
+  /* TODO: don't hotlink this */
   background-image: url("http://pre09.deviantart.net/cc70/th/pre/f/2015/098/3/1/deus_ex_md__abstract_wallpaper_by_limb0ist-d8oz2r8.jpg");
-
 }
 
+
+.error_bar {
+  color: white;
+}
 
  .guest {
    font-size: 16px;
@@ -655,8 +658,7 @@ body {
    width: 147px;
    border: 1px solid inherit;
    padding: 24px 0px 0px 0px;
-   -webkit-appearance: none;
-   -moz-appearance: none;
+
  }
 
  .show_pic_comments {
