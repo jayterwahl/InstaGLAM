@@ -26978,7 +26978,7 @@
 	            "h2",
 	            { onClick: this.handleClick,
 	              className: "cursor" },
-	            "InstaGLAM"
+	            "InstaGlam"
 	          )
 	        ),
 	        React.createElement(UploadButton, { className: "header_item cursor" }),
