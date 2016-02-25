@@ -158,7 +158,9 @@
   right: 10px;
   background-color: black;
   color: gold;
-  border: 1px solid #234562;
+  border: 2px solid #234562;
+  text-decoration: none;
+  border-radius: 10px;
 }
 
 #splash-log-in-button:hover {
@@ -177,6 +179,11 @@
 #splash-sign-up-button {
   background-color: black;
   color: gold;
+  border-radius: 10px;
+  border: 2px solid #234562;
+  text-decoration: none;
+
+
 }
 
 .hidden-submit {
