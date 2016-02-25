@@ -439,7 +439,6 @@ body {
  }
 
  /* put this in .feed if you don't find something better
-
  background-image: url("http://pre09.deviantart.net/cc70/th/pre/f/2015/098/3/1/deus_ex_md__abstract_wallpaper_by_limb0ist-d8oz2r8.jpg");
 */
 
@@ -629,9 +628,6 @@ body {
  }
 
  .camera_icon {
-   -moz-transition: all .2s ease-in;
-   -o-transition: all .2s ease-in;
-   -webkit-transition: all .2s ease-in;
    transition: all .2s ease-in;
    color: #9e9e9e;
  }
@@ -647,9 +643,9 @@ body {
    float: left;
    margin: 2px;
    text-align: center;
-   width: 147px;
+   width: 610px;
    border: 1px solid inherit;
-   padding: 24px 0px 0px 0px;
+   padding: 31px 0px 0px 0px;
 
  }
 
