@@ -150,10 +150,10 @@
    }
 
 
+   /* TODO: use shepherd jquery(?) plugin to do the tour
 
 /*the guest button*/
 body {
-  /* TODO: don't hotlink this */
   background-image: url("Black-Abstract-Wallpaper-4.jpg");
   overflow: scroll;
 }

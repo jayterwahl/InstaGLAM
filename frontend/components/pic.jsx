@@ -141,7 +141,7 @@ var Pic = React.createClass({
           </div>
         </div>
         <div className="show_pic_width">
-            <img src={"http://res.cloudinary.com/picstagram/image/upload/s-" +
+            <img src={"http://res.cloudinary.com/instaglam/image/upload/s-" +
                       "-cdzgeeOu--/c_fill,g_center,h_550,q_91,w_550/" +
                       this.state.pic.public_id + ".jpg"
                  }
