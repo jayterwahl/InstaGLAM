@@ -31,6 +31,7 @@ var NavBar = React.createClass({
           <UploadButton className="header_item cursor"></UploadButton>
           <h3 className="log_out cursor"
               onClick={this.handleLogOut}>
+            {}
             Sign Out
           </h3>
         </div>

@@ -155,6 +155,7 @@
 body {
   /* TODO: don't hotlink this */
   background-image: url("http://pre09.deviantart.net/cc70/th/pre/f/2015/098/3/1/deus_ex_md__abstract_wallpaper_by_limb0ist-d8oz2r8.jpg");
+  overflow: scroll;
 }
 
 
@@ -368,18 +369,14 @@ body {
 .album_pic_display {
   width: 375px;
   height: 375px;
-  -moz-transition: all .3s ease-in;
-  -o-transition: all .3s ease-in;
-  -webkit-transition: all .3s ease-in;
   transition: all .3s ease-in;
   box-shadow: 6px 6px 6px #E0E0E0;
 }
 
 .album_pic_display:hover {
   box-shadow: 9px 9px 9px #cecece;
-  -webkit-transform: scale(1.005);
-  -ms-transform: scale(1.005);
-  transform: scale(1.005);
+
+  transform: scale(1.025);
 }
 
 .album_pic_div {
@@ -467,7 +464,7 @@ body {
  }
 
  .load_more_text {
-   padding: 52px 0px 0px 0px;
+   padding: 52px 0px 0px 26px;
    width: 100px;
  }
 

@@ -17,11 +17,24 @@
     }
     </script>
 </head>
-<body>
+<body id="parallax">
 
 <%= render "layouts/errors" %>
+<section>
+
 <%= yield %>
 
+</section>
 
 </body>
 </html>
+
+<script>
+var parallax = document.getElementById("parallax");
+var speed = -1;
+
+window.onscroll = function() {
+  var yOffset = window.pageYOffset;
+  parallax.style.backgroundPosition = "0px " + (yOffset / speed) + "px";
+}
+  </script>
