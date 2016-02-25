@@ -446,6 +446,9 @@ body {
  .top_pad {
    padding: 8px 0px 0px 0px;
    color: gold;
+   text-align: center;
+   list-style-type: none;
+
  }
 
  .bottom_pad {
