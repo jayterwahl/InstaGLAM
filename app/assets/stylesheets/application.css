@@ -702,7 +702,38 @@ body {
   padding: 5px 0px 0px 0px;
   box-shadow: 9px 9px 9px #E0E0E0;
   opacity: 0;
+  -webkit-transition: opacity 2s ease-in-out;
+  -moz-transition: opacity 2s ease-in-out;
+  -o-transition: opacity 2s ease-in-out;
+  transition: opacity 2s ease-in-out;
+
 }
+
+@keyframes sneaky_fade {
+ 0% {
+ opacity:0;
+}
+
+1% {
+opacity: 1;
+}
+
+100% {
+opacity:1;
+}
+}
+
+#sneaky {
+animation-name: sneaky_fade;
+animation-duration: 800s;
+}
+
+#insufficientGlamourMessage {
+  font-size: 23px;
+  color: white;
+
+}
+
 
 .show_pic_width {
   width: 550px;

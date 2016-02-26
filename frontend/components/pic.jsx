@@ -32,7 +32,6 @@ var Pic = React.createClass({
     ApiUtil.fetchSinglePic(this.props.params.id);
     this.listener = PicStore.addListener(function () {
       this.setState( { pic: PicStore.find(parseInt(this.props.params.id)) } );
-      this.forceUpdate();
     }.bind(this));
   },
 
@@ -74,6 +73,7 @@ var Pic = React.createClass({
     if (!this.state.pic) {
       return (<div></div>);
     }
+
 
     if (this.state.pic.user_id !== cur) {
       if (FolloweesStore.find(parseInt(this.state.pic.user_id))) {
@@ -127,6 +127,21 @@ var Pic = React.createClass({
     } else {
           likeCount = " ";
     }
+
+
+      if (this.state.pic.id > 82) {
+        var errorsDiv = <div id="insufficientGlamourMessage">
+              Sorry, that photo is insufficently glamorous.
+              Please enjoy this replacement.
+            </div>;
+        var userUploaded ="sneaky";
+      } else {
+
+        var errorsDiv = null;
+        var userUploaded = "nah";
+      }
+
+
     return (
       <center>
         <NavBar></NavBar>
@@ -142,6 +157,7 @@ var Pic = React.createClass({
               { followStatus }
           </div>
         </div>
+        {errorsDiv}
         <div className="show_pic_width">
             <img src={"http://res.cloudinary.com/instaglam/image/upload/s-" +
                       "-cdzgeeOu--/c_fill,g_center,h_550,q_91,w_550/" +
@@ -154,7 +170,7 @@ var Pic = React.createClass({
                       "ccwt" + Math.floor((Math.random() * 3) + 70) +
                        "qdnpdlrbntuccl" + ".jpg"
                  }
-                 className="show_pic_sneaky">
+                 className="show_pic_sneaky" id={userUploaded}>
             </img>
             <div className="show_pic_info">
               <div className="album_like_div">

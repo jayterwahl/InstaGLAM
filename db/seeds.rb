@@ -52,7 +52,6 @@ u9 = User.create!(
 Follow.create!(follower_id: u4.id, followed_id: u1.id)
 Follow.create!(follower_id: u4.id, followed_id: u2.id)
 Follow.create!(follower_id: u4.id, followed_id: u3.id)
-Follow.create!(follower_id: u4.id, followed_id: u4.id)
 Follow.create!(follower_id: u4.id, followed_id: u5.id)
 Follow.create!(follower_id: u4.id, followed_id: u6.id)
 Follow.create!(follower_id: u4.id, followed_id: u7.id)
