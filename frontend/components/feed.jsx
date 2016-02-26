@@ -21,11 +21,6 @@ var Feed = React.createClass({
     );
   },
 
-  addToLoadAmount: function () {
-    this.loadAmount += 7;
-    this.forceUpdate();
-  },
-
   componentWillMount: function () {
     ApiUtil.fetchFeedForUser();
     this.listener = PicStore.addListener(function () {
@@ -38,6 +33,11 @@ var Feed = React.createClass({
     this.followeesListener = FolloweesStore.addListener(function () {
       this.setState({ followees: FolloweesStore.all() });
     }.bind(this));
+  },
+
+  addToLoadAmount: function () {
+    this.loadAmount += 7;
+    this.forceUpdate();
   },
 
   componentWillUnmount: function () {

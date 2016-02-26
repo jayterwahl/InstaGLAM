@@ -145,6 +145,7 @@ var Pic = React.createClass({
     return (
       <center>
         <NavBar></NavBar>
+        {errorsDiv}
         <div key={ this.state.pic.id }
              className="show_pic_title_info">
           <div className="show_pic_username cursor"
@@ -157,7 +158,6 @@ var Pic = React.createClass({
               { followStatus }
           </div>
         </div>
-        {errorsDiv}
         <div className="show_pic_width">
             <img src={"http://res.cloudinary.com/instaglam/image/upload/s-" +
                       "-cdzgeeOu--/c_fill,g_center,h_550,q_91,w_550/" +

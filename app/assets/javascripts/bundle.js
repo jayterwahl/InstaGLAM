@@ -31898,6 +31898,7 @@
 	
 	  upload: function (e) {
 	    e.preventDefault();
+	    debugger;
 	    cloudinary.openUploadWidget(CLOUDINARY_OPTIONS, function (error, results) {
 	      if (!error) {
 	        ApiUtil.createPic(this.incomingPic, results[0].public_id);
@@ -32067,6 +32068,7 @@
 	      "center",
 	      null,
 	      React.createElement(NavBar, null),
+	      errorsDiv,
 	      React.createElement(
 	        "div",
 	        { key: this.state.pic.id,
@@ -32085,7 +32087,6 @@
 	          followStatus
 	        )
 	      ),
-	      errorsDiv,
 	      React.createElement(
 	        "div",
 	        { className: "show_pic_width" },
@@ -32867,11 +32868,6 @@
 	    return { pics: [] };
 	  },
 	
-	  addToLoadAmount: function () {
-	    this.loadAmount += 7;
-	    this.forceUpdate();
-	  },
-	
 	  componentWillMount: function () {
 	    ApiUtil.fetchFeedForUser();
 	    this.listener = PicStore.addListener(function () {
@@ -32884,6 +32880,11 @@
 	    this.followeesListener = FolloweesStore.addListener(function () {
 	      this.setState({ followees: FolloweesStore.all() });
 	    }.bind(this));
+	  },
+	
+	  addToLoadAmount: function () {
+	    this.loadAmount += 7;
+	    this.forceUpdate();
 	  },
 	
 	  componentWillUnmount: function () {
