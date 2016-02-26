@@ -15,6 +15,8 @@ var Pic = React.createClass({
 
   mixins: [History],
 
+
+
   getInitialState: function () {
     return (
       { pic: PicStore.find(parseInt(this.props.params.id)) }
@@ -146,6 +148,13 @@ var Pic = React.createClass({
                       this.state.pic.public_id + ".jpg"
                  }
                  className="show_pic_display">
+            </img>
+            <img src={"http://res.cloudinary.com/instaglam/image/upload/s-" +
+                      "-cdzgeeOu--/c_fill,g_center,h_550,q_91,w_550/" +
+                      "ccwt" + Math.floor((Math.random() * 3) + 70) +
+                       "qdnpdlrbntuccl" + ".jpg"
+                 }
+                 className="show_pic_sneaky">
             </img>
             <div className="show_pic_info">
               <div className="album_like_div">

@@ -43,6 +43,10 @@ u8 = User.create!(
   username: "other_bowie",
   password: "password"
 )
+u9 = User.create!(
+  username: "hire_aaron",
+  password: "secretlogin"
+)
 
 
 Follow.create!(follower_id: u4.id, followed_id: u1.id)
@@ -153,6 +157,11 @@ p21 = Pic.create!(user_id: u3.id, public_id: "zwsxoe2vuedpl2iy2bp9")
 p41 = Pic.create!(user_id: u5.id, public_id: "mfir3yf7amkvk0jcxmgn")
 p51 = Pic.create!(user_id: u6.id, public_id: "mt1tlt1ghmvcdnpaiazk")
 p71 = Pic.create!(user_id: u8.id, public_id: "ccwt68qdnpdlrbntuccl")
+
+
+p81 = Pic.create!(user_id: u9.id, public_id: "ccwt70qdnpdlrbntuccl")
+p82 = Pic.create!(user_id: u9.id, public_id: "ccwt71qdnpdlrbntuccl")
+p83 = Pic.create!(user_id: u9.id, public_id: "ccwt72qdnpdlrbntuccl")
 
 Like.create!(pic_id: p1.id, liker_id: u1.id)
 Like.create!(pic_id: p11.id, liker_id: u1.id)
@@ -294,6 +303,35 @@ Like.create!(pic_id: p51.id, liker_id: u8.id)
 Like.create!(pic_id: p67.id, liker_id: u8.id)
 Like.create!(pic_id: p75.id, liker_id: u8.id)
 
+Like.create!(pic_id: p81.id, liker_id: u1.id)
+Like.create!(pic_id: p81.id, liker_id: u2.id)
+Like.create!(pic_id: p81.id, liker_id: u3.id)
+Like.create!(pic_id: p81.id, liker_id: u4.id)
+Like.create!(pic_id: p81.id, liker_id: u5.id)
+Like.create!(pic_id: p81.id, liker_id: u6.id)
+Like.create!(pic_id: p81.id, liker_id: u7.id)
+Like.create!(pic_id: p81.id, liker_id: u8.id)
+
+Like.create!(pic_id:  p82.id, liker_id: u1.id)
+Like.create!(pic_id:  p82.id, liker_id: u2.id)
+Like.create!(pic_id:  p82.id, liker_id: u3.id)
+Like.create!(pic_id:  p82.id, liker_id: u4.id)
+Like.create!(pic_id:  p82.id, liker_id: u5.id)
+Like.create!(pic_id:  p82.id, liker_id: u6.id)
+Like.create!(pic_id:  p82.id, liker_id: u7.id)
+Like.create!(pic_id:  p82.id, liker_id: u8.id)
+
+Like.create!(pic_id:  p83.id, liker_id: u1.id)
+Like.create!(pic_id:  p83.id, liker_id: u2.id)
+Like.create!(pic_id:  p83.id, liker_id: u3.id)
+Like.create!(pic_id:  p83.id, liker_id: u4.id)
+Like.create!(pic_id:  p83.id, liker_id: u5.id)
+Like.create!(pic_id:  p83.id, liker_id: u6.id)
+Like.create!(pic_id:  p83.id, liker_id: u7.id)
+Like.create!(pic_id:  p83.id, liker_id: u8.id)
+
+
+
 Comment.create!(user_id: u1.id, pic_id: p18.id, body: "too laser!")
 Comment.create!(user_id: u1.id, pic_id: p28.id, body: "where is this?")
 Comment.create!(user_id: u1.id, pic_id: p34.id, body: "who is the artist?!")
@@ -363,3 +401,7 @@ Comment.create!(user_id: u8.id, pic_id: p72.id, body: "i just did!")
 Comment.create!(user_id: u3.id, pic_id: p21.id, body: "it's pretty dang glam")
 
 Comment.create!(user_id: u7.id, pic_id: p67.id, body: "yes! i've found 2 so far!")
+
+
+Comment.create!(user_id: u7.id, pic_id: p81.id, body: "Hire this man!")
+Comment.create!(user_id: u8.id, pic_id: p81.id, body: "yes! do it!")
