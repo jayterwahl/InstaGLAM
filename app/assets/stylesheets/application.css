@@ -437,7 +437,7 @@ body {
  }
 
  .navvyGlam {
-     width: 19%;
+     width: 110px;
      border-radius: 8px;
      background-repeat: no-repeat;
      background-image: -webkit-linear-gradient( top left, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.2) 37%, rgba(255, 255, 255, 0.8) 45%, rgba(255, 255, 255, 0.0) 50% );
@@ -675,7 +675,7 @@ body {
    text-align: center;
    width: 8%;
    border: 1px solid inherit;
-   padding: 30px 0px 0px 210px;
+   padding: 25px 0px 0px 210px;
 
  }
 
