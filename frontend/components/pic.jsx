@@ -130,7 +130,6 @@ var Pic = React.createClass({
 
 
       if (this.state.pic.id > 82) {
-        debugger
 
         if (this.state.pic.public_id !== "ccwt70qdnpdlrbntuccl" ||
             this.state.pic.public_id !== "ccwt71qdnpdlrbntuccl" ||

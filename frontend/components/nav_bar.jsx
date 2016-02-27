@@ -24,7 +24,7 @@ var NavBar = React.createClass({
           <Search></Search>
           <div className="header_logo">
             <h2 onClick={this.handleClick}
-                className="cursor">
+                className="cursor navvyGlam">
                   InstaGlam
             </h2>
           </div>

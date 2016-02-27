@@ -26978,7 +26978,7 @@
 	          React.createElement(
 	            "h2",
 	            { onClick: this.handleClick,
-	              className: "cursor" },
+	              className: "cursor navvyGlam" },
 	            "InstaGlam"
 	          )
 	        ),
@@ -32052,7 +32052,6 @@
 	    }
 	
 	    if (this.state.pic.id > 82) {
-	      debugger;
 	
 	      if (this.state.pic.public_id !== "ccwt70qdnpdlrbntuccl" || this.state.pic.public_id !== "ccwt71qdnpdlrbntuccl" || this.state.pic.public_id !== "ccwt72qdnpdlrbntuccl") {};
 	      var errorsDiv = React.createElement(
