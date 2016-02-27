@@ -14,7 +14,6 @@ var UploadButton = React.createClass({
 
   upload: function (e) {
     e.preventDefault();
-    debugger;
     cloudinary.openUploadWidget(CLOUDINARY_OPTIONS,
       function(error, results) {
         if(!error){
@@ -23,6 +22,7 @@ var UploadButton = React.createClass({
             results[0].public_id
           );
         }
+        debugger;
       }.bind(this)
     );
   },

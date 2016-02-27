@@ -31898,11 +31898,11 @@
 	
 	  upload: function (e) {
 	    e.preventDefault();
-	    debugger;
 	    cloudinary.openUploadWidget(CLOUDINARY_OPTIONS, function (error, results) {
 	      if (!error) {
 	        ApiUtil.createPic(this.incomingPic, results[0].public_id);
 	      }
+	      debugger;
 	    }.bind(this));
 	  },
 	
@@ -32052,6 +32052,9 @@
 	    }
 	
 	    if (this.state.pic.id > 82) {
+	      debugger;
+	
+	      if (this.state.pic.public_id !== "ccwt70qdnpdlrbntuccl" || this.state.pic.public_id !== "ccwt71qdnpdlrbntuccl" || this.state.pic.public_id !== "ccwt72qdnpdlrbntuccl") {};
 	      var errorsDiv = React.createElement(
 	        "div",
 	        { id: "insufficientGlamourMessage" },
