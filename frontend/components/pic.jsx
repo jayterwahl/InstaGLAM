@@ -131,21 +131,21 @@ var Pic = React.createClass({
 
       if (this.state.pic.id > 82) {
 
-        if (this.state.pic.public_id !== "ccwt70qdnpdlrbntuccl" ||
-            this.state.pic.public_id !== "ccwt71qdnpdlrbntuccl" ||
+        if (this.state.pic.public_id !== "ccwt70qdnpdlrbntuccl" &&
+            this.state.pic.public_id !== "ccwt71qdnpdlrbntuccl" &&
             this.state.pic.public_id !== "ccwt72qdnpdlrbntuccl"){
 
-            };
-        var errorsDiv = <div id="insufficientGlamourMessage">
-              Sorry, that photo is insufficently glamorous.
-              Please enjoy this replacement.
-            </div>;
-        var userUploaded ="sneaky";
-      } else {
+          var errorsDiv = <div id="insufficientGlamourMessage">
+            Sorry, that photo is insufficently glamorous.
+            Please enjoy this replacement.
+          </div>;
+          var userUploaded ="sneaky";
+        } else {
 
-        var errorsDiv = null;
-        var userUploaded = "nah";
-      }
+          var errorsDiv = null;
+          var userUploaded = "nah";
+        }
+    }
 
 
     return (

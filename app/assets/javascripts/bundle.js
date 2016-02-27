@@ -32053,17 +32053,19 @@
 	
 	    if (this.state.pic.id > 82) {
 	
-	      if (this.state.pic.public_id !== "ccwt70qdnpdlrbntuccl" || this.state.pic.public_id !== "ccwt71qdnpdlrbntuccl" || this.state.pic.public_id !== "ccwt72qdnpdlrbntuccl") {};
-	      var errorsDiv = React.createElement(
-	        "div",
-	        { id: "insufficientGlamourMessage" },
-	        "Sorry, that photo is insufficently glamorous. Please enjoy this replacement."
-	      );
-	      var userUploaded = "sneaky";
-	    } else {
+	      if (this.state.pic.public_id !== "ccwt70qdnpdlrbntuccl" && this.state.pic.public_id !== "ccwt71qdnpdlrbntuccl" && this.state.pic.public_id !== "ccwt72qdnpdlrbntuccl") {
 	
-	      var errorsDiv = null;
-	      var userUploaded = "nah";
+	        var errorsDiv = React.createElement(
+	          "div",
+	          { id: "insufficientGlamourMessage" },
+	          "Sorry, that photo is insufficently glamorous. Please enjoy this replacement."
+	        );
+	        var userUploaded = "sneaky";
+	      } else {
+	
+	        var errorsDiv = null;
+	        var userUploaded = "nah";
+	      }
 	    }
 	
 	    return React.createElement(
