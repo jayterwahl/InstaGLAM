@@ -9,6 +9,14 @@ var NavBar = require("./nav_bar.jsx");
 var UploadButton = require("./upload_button");
 var cur = window.current_user_id;
 var Comments = require("./comment.jsx");
+var uploadFlag = false;
+var errorsDiv = null;
+var userUploaded = "nah";
+
+
+var glamPicID =
+"ccwt" + Math.floor((Math.random() * 3) + 70) + "qdnpdlrbntuccl";
+
 
 
 var Pic = React.createClass({
@@ -126,24 +134,22 @@ var Pic = React.createClass({
           likeCount = " ";
     }
 
-    var glamPicID =
-            "ccwt" + Math.floor((Math.random() * 3) + 70) + "qdnpdlrbntuccl";
 
-      console.log(glamPicID);
+    if (this.state.pic.id > 82 && uploadFlag === false && this.state.pic.public_id) {
 
-    var unworthyPicId = this.props.params.id
+      uploadFlag = true;
 
-    if (this.state.pic.id > 82) {
-
+      var unworthyPicId = this.props.params.id
+      console.log(this.state.pic.public_id);
       if (this.state.pic.public_id !== "ccwt70qdnpdlrbntuccl" &&
           this.state.pic.public_id !== "ccwt71qdnpdlrbntuccl" &&
           this.state.pic.public_id !== "ccwt72qdnpdlrbntuccl"){
 
-        var errorsDiv = <div id="insufficientGlamourMessage">
+        errorsDiv = <div id="insufficientGlamourMessage">
           Sorry, that photo is insufficently glamorous.
           Please enjoy this replacement.
         </div>;
-        var userUploaded ="sneaky";
+        userUploaded ="sneaky";
 
         setTimeout(function(){
           ApiUtil.createPic(
@@ -159,10 +165,6 @@ var Pic = React.createClass({
         }, 3000);
 
 
-      } else {
-
-        var errorsDiv = null;
-        var userUploaded = "nah";
       }
     }
 

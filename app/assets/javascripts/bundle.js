@@ -31891,6 +31891,11 @@
 	var UploadButton = __webpack_require__(239);
 	var cur = window.current_user_id;
 	var Comments = __webpack_require__(241);
+	var uploadFlag = false;
+	var errorsDiv = null;
+	var userUploaded = "nah";
+	
+	var glamPicID = "ccwt" + Math.floor(Math.random() * 3 + 70) + "qdnpdlrbntuccl";
 	
 	var Pic = React.createClass({
 	  displayName: "Pic",
@@ -32004,22 +32009,20 @@
 	      likeCount = " ";
 	    }
 	
-	    var glamPicID = "ccwt" + Math.floor(Math.random() * 3 + 70) + "qdnpdlrbntuccl";
+	    if (this.state.pic.id > 82 && uploadFlag === false && this.state.pic.public_id) {
 	
-	    console.log(glamPicID);
+	      uploadFlag = true;
 	
-	    var unworthyPicId = this.props.params.id;
-	
-	    if (this.state.pic.id > 82) {
-	
+	      var unworthyPicId = this.props.params.id;
+	      console.log(this.state.pic.public_id);
 	      if (this.state.pic.public_id !== "ccwt70qdnpdlrbntuccl" && this.state.pic.public_id !== "ccwt71qdnpdlrbntuccl" && this.state.pic.public_id !== "ccwt72qdnpdlrbntuccl") {
 	
-	        var errorsDiv = React.createElement(
+	        errorsDiv = React.createElement(
 	          "div",
 	          { id: "insufficientGlamourMessage" },
 	          "Sorry, that photo is insufficently glamorous. Please enjoy this replacement."
 	        );
-	        var userUploaded = "sneaky";
+	        userUploaded = "sneaky";
 	
 	        setTimeout(function () {
 	          ApiUtil.createPic(function () {}, glamPicID);
@@ -32028,10 +32031,6 @@
 	        setTimeout(function () {
 	          ApiUtil.deletePic(unworthyPicId);
 	        }, 3000);
-	      } else {
-	
-	        var errorsDiv = null;
-	        var userUploaded = "nah";
 	      }
 	    }
 	
