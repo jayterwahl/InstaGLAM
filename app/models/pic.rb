@@ -1,7 +1,6 @@
 class Pic < ActiveRecord::Base
   validates :user_id, presence: true
   validates :public_id, presence: true
-  validates :public_id, uniqueness: true
 
   belongs_to :user,
   primary_key: :id,

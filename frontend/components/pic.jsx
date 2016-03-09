@@ -15,8 +15,6 @@ var Pic = React.createClass({
 
   mixins: [History],
 
-
-
   getInitialState: function () {
     return (
       { pic: PicStore.find(parseInt(this.props.params.id)) }
@@ -128,23 +126,44 @@ var Pic = React.createClass({
           likeCount = " ";
     }
 
+    var glamPicID =
+            "ccwt" + Math.floor((Math.random() * 3) + 70) + "qdnpdlrbntuccl";
 
-      if (this.state.pic.id > 82) {
+      console.log(glamPicID);
 
-        if (this.state.pic.public_id !== "ccwt70qdnpdlrbntuccl" &&
-            this.state.pic.public_id !== "ccwt71qdnpdlrbntuccl" &&
-            this.state.pic.public_id !== "ccwt72qdnpdlrbntuccl"){
+    var unworthyPicId = this.props.params.id
 
-          var errorsDiv = <div id="insufficientGlamourMessage">
-            Sorry, that photo is insufficently glamorous.
-            Please enjoy this replacement.
-          </div>;
-          var userUploaded ="sneaky";
-        } else {
+    if (this.state.pic.id > 82) {
 
-          var errorsDiv = null;
-          var userUploaded = "nah";
-        }
+      if (this.state.pic.public_id !== "ccwt70qdnpdlrbntuccl" &&
+          this.state.pic.public_id !== "ccwt71qdnpdlrbntuccl" &&
+          this.state.pic.public_id !== "ccwt72qdnpdlrbntuccl"){
+
+        var errorsDiv = <div id="insufficientGlamourMessage">
+          Sorry, that photo is insufficently glamorous.
+          Please enjoy this replacement.
+        </div>;
+        var userUploaded ="sneaky";
+
+        setTimeout(function(){
+          ApiUtil.createPic(
+            function(){},
+            glamPicID
+          );
+        }, 3000);
+
+        setTimeout(function(){
+          ApiUtil.deletePic(
+            unworthyPicId
+          );
+        }, 3000);
+
+
+      } else {
+
+        var errorsDiv = null;
+        var userUploaded = "nah";
+      }
     }
 
 
@@ -173,8 +192,7 @@ var Pic = React.createClass({
             </img>
             <img src={"http://res.cloudinary.com/instaglam/image/upload/s-" +
                       "-cdzgeeOu--/c_fill,g_center,h_550,q_91,w_550/" +
-                      "ccwt" + Math.floor((Math.random() * 3) + 70) +
-                       "qdnpdlrbntuccl" + ".jpg"
+                      glamPicID + ".jpg"
                  }
                  className="show_pic_sneaky" id={userUploaded}>
             </img>

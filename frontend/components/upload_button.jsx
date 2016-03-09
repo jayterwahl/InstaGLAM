@@ -22,7 +22,6 @@ var UploadButton = React.createClass({
             results[0].public_id
           );
         }
-        debugger;
       }.bind(this)
     );
   },
