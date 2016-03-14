@@ -12,6 +12,7 @@ var Comments = require("./comment.jsx");
 var uploadFlag = false;
 var errorsDiv = null;
 var userUploaded = "nah";
+var counter = 0;
 
 
 var glamPicID =
@@ -134,6 +135,13 @@ var Pic = React.createClass({
           likeCount = " ";
     }
 
+    console.log(counter);
+    counter ++;
+
+    if (this.state.pic.id < 82) {
+      errorsDiv = null;
+      userUploaded = "nah";
+    }
 
     if (this.state.pic.id > 82 && uploadFlag === false && this.state.pic.public_id) {
 
