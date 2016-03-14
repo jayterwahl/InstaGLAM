@@ -78,7 +78,7 @@ var Search = React.createClass({
     var results = this.matches();
     var users = this.uniq(results);
     return (
-      <div className="cursor search_div">
+      <div className="cursor_search_div">
         <input type="text"
                key="search_input"
                className="search_field"

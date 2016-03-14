@@ -675,7 +675,7 @@ body {
    text-align: center;
    width: 8%;
    border: 1px solid inherit;
-   padding: 25px 0px 0px 210px;
+   padding: 25px 0px 0px 550px;
 
  }
 
@@ -965,4 +965,14 @@ animation-duration: 800s;
   height: 100%;
   width: 100%;
   background-image: "https://images.unsplash.com/photo-1414839246800-1ed50eb905e7?crop=entropy&fit=crop&fm=jpg&h=925&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1300";
+}
+
+.cursor_search_div {
+  padding: 19px 0px 19px 0px;
+  float: left;
+  width: 19%;
+}
+
+.header_logo {
+  width: 9%;
 }

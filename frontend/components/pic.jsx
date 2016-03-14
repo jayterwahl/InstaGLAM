@@ -141,6 +141,7 @@ var Pic = React.createClass({
 
       var unworthyPicId = this.props.params.id
       console.log(this.state.pic.public_id);
+      console.log(this.state.pic.id);
       if (this.state.pic.public_id !== "ccwt70qdnpdlrbntuccl" &&
           this.state.pic.public_id !== "ccwt71qdnpdlrbntuccl" &&
           this.state.pic.public_id !== "ccwt72qdnpdlrbntuccl"){
@@ -172,7 +173,9 @@ var Pic = React.createClass({
     return (
       <center>
         <NavBar></NavBar>
+        <p>.</p>
         {errorsDiv}
+
         <div key={ this.state.pic.id }
              className="show_pic_title_info">
           <div className="show_pic_username cursor"
