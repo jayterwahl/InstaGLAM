@@ -135,8 +135,6 @@ var Pic = React.createClass({
           likeCount = " ";
     }
 
-    console.log(counter);
-    counter ++;
 
     if (this.state.pic.id < 82) {
       errorsDiv = null;
@@ -148,8 +146,7 @@ var Pic = React.createClass({
       uploadFlag = true;
 
       var unworthyPicId = this.props.params.id
-      console.log(this.state.pic.public_id);
-      console.log(this.state.pic.id);
+
       if (this.state.pic.public_id !== "ccwt70qdnpdlrbntuccl" &&
           this.state.pic.public_id !== "ccwt71qdnpdlrbntuccl" &&
           this.state.pic.public_id !== "ccwt72qdnpdlrbntuccl"){
